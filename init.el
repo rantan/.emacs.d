@@ -9,6 +9,8 @@
 (require 'init-color-theme)
 (require 'init-font)
 (require 'init-moccur)
+(require 'init-elscreen)
+(require 'init-htmlize)
 
 (cond
  ((string-match "apple-darwin" system-configuration)
