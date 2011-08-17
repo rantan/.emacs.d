@@ -6,11 +6,14 @@
 (setq auto-install-directory "~/.emacs.d/auto-install/")
 
 (require 'init-auto-complete)
+(require 'init-anything)
 (require 'init-color-theme)
 (require 'init-font)
 (require 'init-moccur)
 (require 'init-elscreen)
 (require 'init-htmlize)
+(require 'init-linum)
+
 
 (cond
  ((string-match "apple-darwin" system-configuration)
@@ -30,23 +33,3 @@
 
 ;;; 透過
 (set-frame-parameter nil 'alpha 90)
-
-;; C-c m でフルスクリーンを切り替え
-;; (defun my-mac-toggle-max-window ()
-;;   (interactive)
-;;   (if (frame-parameter nil 'fullscreen)
-;;       (set-frame-parameter nil 'fullscreen nil)
-;;     (menu-bar-mode nil)
-;;     (set-frame-parameter nil 'fullscreen 'fullboth)))
-;; (global-set-key "\C-cm" 'my-mac-toggle-max-window)
-
-;; 
-;; Haw to install anything 
-;; auto-install-batch RET anything
-;; 
-(require 'anything-startup)
-;; (require 'anything)
-;; (require 'anything-config)
-(setq anything-idle-delay 0.3)	; 候補を作って描写するまでのタイムラグ。デフォルトで 0.3
-(setq anything-input-idle-delay 0.2) ; 文字列を入力してから検索するまでのタイムラグ。デフォルトで 0
-(setq anything-candidate-number-limit 100) ; 表示する最大候補数。デフォルトで 50
