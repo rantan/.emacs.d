@@ -1,9 +1,9 @@
 ;; -*- coding: utf-8 -*-
 (add-to-list 'load-path (expand-file-name "~/.emacs.d"))
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/auto-install"))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/site-lisp/auto-install"))
 
 (require 'auto-install)
-(setq auto-install-directory "~/.emacs.d/auto-install/")
+(setq auto-install-directory "~/.emacs.d/site-lisp/auto-install/")
 
 (require 'init-auto-complete)
 (require 'init-anything)
