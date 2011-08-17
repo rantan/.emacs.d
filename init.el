@@ -12,9 +12,9 @@
 (require 'init-moccur)
 (require 'init-elscreen)
 (require 'init-htmlize)
-(require 'init-linum)
+;; (require 'init-linum)
 (require 'init-rinari)
-
+(require 'init-javascript)
 
 (cond
  ((string-match "apple-darwin" system-configuration)
