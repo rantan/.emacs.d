@@ -13,6 +13,7 @@
 (require 'init-elscreen)
 (require 'init-htmlize)
 (require 'init-linum)
+(require 'init-rinari)
 
 
 (cond

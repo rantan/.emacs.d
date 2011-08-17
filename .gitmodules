@@ -1,0 +1,3 @@
+[submodule "site-lisp/rinari"]
+	path = site-lisp/rinari
+	url = https://github.com/eschulte/rinari.git
