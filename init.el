@@ -1,20 +1,21 @@
 ;; -*- coding: utf-8 -*-
 (add-to-list 'load-path (expand-file-name "~/.emacs.d"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/site-lisp/auto-install"))
+(require 'init-anything)
 
 (require 'auto-install)
 (setq auto-install-directory "~/.emacs.d/site-lisp/auto-install/")
 
 (require 'init-auto-complete)
-(require 'init-anything)
 (require 'init-color-theme)
 (require 'init-font)
 (require 'init-moccur)
 (require 'init-elscreen)
 (require 'init-htmlize)
-;; (require 'init-linum)
+(require 'init-linum)
 (require 'init-rinari)
 (require 'init-javascript)
+(require 'init-yaml)
 
 (cond
  ((string-match "apple-darwin" system-configuration)
@@ -31,6 +32,10 @@
 
 ;;; C-hでBackSpace
 (define-key global-map "\C-h" 'delete-backward-char)
+
+
+;;; fullscreen切り替え
+(define-key global-map "\C-cm" 'ns-toggle-fullscreen)
 
 ;;; 透過
 (set-frame-parameter nil 'alpha 90)
