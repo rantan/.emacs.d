@@ -16,6 +16,8 @@
 (require 'init-rinari)
 (require 'init-javascript)
 (require 'init-yaml)
+(require 'init-auto-highlight-symbol-mode)
+(require 'init-jaspace)
 
 (cond
  ((string-match "apple-darwin" system-configuration)

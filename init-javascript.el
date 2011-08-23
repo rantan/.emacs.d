@@ -2,8 +2,6 @@
 
 (require 'js2-mode)
 
-(setq-default c-basic-offset 4)
-
 (setq js2-cleanup-whitespace nil
       js2-mirror-mode nil
       js2-bounce-indent-flag nil)
@@ -19,5 +17,13 @@
 (define-key js2-mode-map "\C-i" 'indent-and-back-to-indentation)
 
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+
+;;; カスタマイズ
+(defun my-js2-mode-hook()
+  (setq c-basic-offset 4
+	indent-tabs-mode nil
+	tab-width 4))
+
+(add-hook 'js2-mode-hook 'my-js2-mode-hook)
 
 (provide 'init-javascript)
