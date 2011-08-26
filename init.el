@@ -15,6 +15,7 @@
 (require 'init-linum)
 (require 'init-rinari)
 (require 'init-javascript)
+(require 'init-ruby)
 (require 'init-yaml)
 (require 'init-auto-highlight-symbol-mode)
 (require 'init-jaspace)
@@ -30,14 +31,17 @@
 (setq inhibit-startup-message t)
 
 ;;; バックアップファイルを無効化
-(setq make-backup-files nil)
+(setq-default make-backup-files nil)
 
 ;;; C-hでBackSpace
 (define-key global-map "\C-h" 'delete-backward-char)
 
+;;; タブを使わない
+(setq-default indent-tabs-mode nil)
 
 ;;; fullscreen切り替え
 (define-key global-map "\C-cm" 'ns-toggle-fullscreen)
 
 ;;; 透過
 (set-frame-parameter nil 'alpha 90)
+

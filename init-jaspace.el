@@ -9,7 +9,7 @@
 ;; 改行記号を表示させる。
 (setq-default jaspace-alternate-eol-string "↓\n")
 ;; タブ記号を表示。
-;;(setq jaspace-highlight-tabs t)  ; highlight tabs
+(setq jaspace-highlight-tabs t)  ; highlight tabs
 
 ;; EXPERIMENTAL: On Emacs 21.3.50.1 (as of June 2004) or 22.0.5.1, a tab
 ;; character may also be shown as the alternate character if

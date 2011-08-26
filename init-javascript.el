@@ -22,7 +22,8 @@
 (defun my-js2-mode-hook()
   (setq c-basic-offset 4
 	indent-tabs-mode nil
-	tab-width 4))
+	tab-width 4)
+  (jaspace-mode-on))
 
 (add-hook 'js2-mode-hook 'my-js2-mode-hook)
 
