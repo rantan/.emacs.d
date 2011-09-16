@@ -1,6 +1,8 @@
 ;; -*- coding: utf-8 -*-
 (add-to-list 'load-path (expand-file-name "~/.emacs.d"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/site-lisp/auto-install"))
+
+(add-to-list 'exec-path "/opt/local/bin/")
 (require 'init-anything)
 
 (require 'auto-install)
@@ -19,6 +21,8 @@
 (require 'init-yaml)
 (require 'init-auto-highlight-symbol-mode)
 (require 'init-jaspace)
+(require 'init-sql)
+(require 'init-git)
 
 (cond
  ((string-match "apple-darwin" system-configuration)
