@@ -23,6 +23,7 @@
 (require 'init-jaspace)
 (require 'init-sql)
 (require 'init-git)
+(require 'init-coffee)
 
 (cond
  ((string-match "apple-darwin" system-configuration)
