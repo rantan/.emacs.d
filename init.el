@@ -24,6 +24,8 @@
 (require 'init-sql)
 (require 'init-git)
 (require 'init-coffee)
+(require 'init-scss)
+(require 'init-flymake)
 
 (cond
  ((string-match "apple-darwin" system-configuration)
@@ -49,4 +51,6 @@
 
 ;;; 透過
 (set-frame-parameter nil 'alpha 90)
+
+(server-start)
 
