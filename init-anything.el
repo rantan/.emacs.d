@@ -9,4 +9,6 @@
 (setq anything-input-idle-delay 0.2) ; 文字列を入力してから検索するまでのタイムラグ。デフォルトで 0
 (setq anything-candidate-number-limit 100) ; 表示する最大候補数。デフォルトで 50
 
+(global-set-key (kbd "M-y") 'anything-show-kill-ring)
+
 (provide 'init-anything)
