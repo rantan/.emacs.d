@@ -26,6 +26,8 @@
 (require 'init-coffee)
 (require 'init-scss)
 (require 'init-flymake)
+(require 'init-textile)
+(require 'init-markdown)
 
 (cond
  ((string-match "apple-darwin" system-configuration)
@@ -33,6 +35,8 @@
   (setq ns-alternate-modifier (quote super))
   )
  )
+
+(set-default-coding-systems 'utf-8)
 
 ;;; 起動画面を非表示
 (setq inhibit-startup-message t)
@@ -47,7 +51,7 @@
 (setq-default indent-tabs-mode nil)
 
 ;;; fullscreen切り替え
-(define-key global-map "\C-cm" 'ns-toggle-fullscreen)
+;;(define-key global-map "\C-cm" 'ns-toggle-fullscreen)
 
 ;;; 透過
 (set-frame-parameter nil 'alpha 90)
