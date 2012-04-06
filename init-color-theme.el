@@ -2,5 +2,6 @@
 (require 'color-theme)
 (color-theme-initialize)
 ;; (color-theme-deep-blue)
-(color-theme-dark-laptop)
+;;(color-theme-dark-laptop)
+(color-theme-deep-blue)
 (provide 'init-color-theme)

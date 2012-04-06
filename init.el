@@ -32,12 +32,19 @@
 (yas/initialize)
 (yas/load-directory "~/.emacs.d/site-lisp/yasnippet/snippets")
 
+(require 'init-scss)
+(require 'init-flymake)
+(require 'init-textile)
+(require 'init-markdown)
+
 (cond
  ((string-match "apple-darwin" system-configuration)
   (setq ns-command-modifier (quote meta))
   (setq ns-alternate-modifier (quote super))
   )
  )
+
+(set-default-coding-systems 'utf-8)
 
 ;;; 起動画面を非表示
 (setq inhibit-startup-message t)
@@ -52,7 +59,14 @@
 (setq-default indent-tabs-mode nil)
 
 ;;; fullscreen切り替え
-(define-key global-map "\C-cm" 'ns-toggle-fullscreen)
+;;(define-key global-map "\C-cm" 'ns-toggle-fullscreen)
 
 ;;; 透過
+<<<<<<< HEAD
 (set-frame-parameter nil 'alpha 90)
+=======
+(set-frame-parameter nil 'alpha 90)
+
+(server-start)
+
+>>>>>>> f947b8227ad3e6fea69735a945b44c05373904c2
