@@ -1,6 +1,6 @@
 (add-to-list 'load-path "~/.emacs.d/site-lisp/color-theme/")
 (require 'color-theme)
 (color-theme-initialize)
-(color-theme-deep-blue)
-
+;; (color-theme-deep-blue)
+(color-theme-dark-laptop)
 (provide 'init-color-theme)

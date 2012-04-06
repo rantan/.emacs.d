@@ -10,19 +10,27 @@
 
 (require 'init-auto-complete)
 (require 'init-color-theme)
-(require 'init-font)
+;; (require 'init-font)
 (require 'init-moccur)
 (require 'init-elscreen)
 (require 'init-htmlize)
-(require 'init-linum)
+;; (require 'init-linum)
 (require 'init-rinari)
 (require 'init-javascript)
 (require 'init-ruby)
 (require 'init-yaml)
 (require 'init-auto-highlight-symbol-mode)
-(require 'init-jaspace)
+;; (require 'init-jaspace)
 (require 'init-sql)
 (require 'init-git)
+(require 'init-coffee)
+
+;;; yasnippet
+(add-to-list 'load-path 
+             "~/.emacs.d/site-lisp/yasnippet")
+(require 'yasnippet) ;; not yasnippet-bundle
+(yas/initialize)
+(yas/load-directory "~/.emacs.d/site-lisp/yasnippet/snippets")
 
 (cond
  ((string-match "apple-darwin" system-configuration)
@@ -48,4 +56,3 @@
 
 ;;; 透過
 (set-frame-parameter nil 'alpha 90)
-
