@@ -62,11 +62,7 @@
 ;;(define-key global-map "\C-cm" 'ns-toggle-fullscreen)
 
 ;;; 透過
-<<<<<<< HEAD
-(set-frame-parameter nil 'alpha 90)
-=======
 (set-frame-parameter nil 'alpha 90)
 
 (server-start)
 
->>>>>>> f947b8227ad3e6fea69735a945b44c05373904c2
