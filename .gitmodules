@@ -19,3 +19,6 @@
 [submodule "site-lisp/scss-mode"]
 	path = site-lisp/scss-mode
 	url = https://github.com/antonj/scss-mode.git
+[submodule "site-lisp/markdown-mode/markdown-css"]
+	path = site-lisp/markdown-mode/markdown-css
+	url = https://github.com/clownfart/Markdown-CSS.git
